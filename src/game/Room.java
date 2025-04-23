@@ -33,38 +33,47 @@ public class Room {
     }
 
     public Room getNorthRoom() {
-        return null; //TODO
+        return northRoom;
     }
 
     public void setNorthRoom(Room northRoom) {
-       
-
-        //TODO
-       //When setNorthRoom is set, call setSouthRoom on the other room here, so that it automatically sets both rooms together.
+        this.northRoom = northRoom;
+        if (northRoom.getSouthRoom() != this){
+            northRoom.setSouthRoom(this);
+        }
     }
 
     public Room getEastRoom() {
-        return null; //TODO
+        return eastRoom;
     }
 
     public void setEastRoom(Room eastRoom) {
-        //TODO
+        this.eastRoom = eastRoom;
+        if (eastRoom.getWestRoom() != this){
+            eastRoom.setWestRoom(this);
+        }
     }
 
     public Room getSouthRoom() {
-        return null; //TODO
+        return southRoom;
     }
 
     public void setSouthRoom(Room southRoom) {
-       //TODO
+       this.southRoom = southRoom;
+       if (southRoom.getNorthRoom() != this){
+           southRoom.setNorthRoom(this);
+       }
     }
 
     public Room getWestRoom() {
-        return null; //TODO
+        return westRoom;
     }
 
     public void setWestRoom(Room westRoom) {
-        //TODO
+        this.westRoom = westRoom;
+        if (westRoom.getEastRoom() != this){
+            westRoom.setEastRoom(this);
+        }
     }
 
     public String getName() {

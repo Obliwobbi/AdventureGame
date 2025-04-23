@@ -49,7 +49,7 @@ class PlayerTest {
         assertFalse(player.move(Direction.WEST));
     }
 
-    @Disabled
+    //@Disabled
     @Test
     public void testPickupItemFromRoom() {
         //Arrange BeforeEach
