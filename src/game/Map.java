@@ -15,7 +15,7 @@ public class Map {
         //TODO create rest of the 9 rooms in cave
 
         // Connect rooms
-        room1.setEastRoom(room2);
+        room1.setEastRoom(room2); //Then this should automatically do a room2.setWestRoom(room1); inside the setEastRoom method.
         room2.setEastRoom(room3);
         //TODO connect all rooms according to the specified map
 

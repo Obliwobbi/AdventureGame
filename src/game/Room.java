@@ -37,7 +37,10 @@ public class Room {
     }
 
     public void setNorthRoom(Room northRoom) {
-       //TODO
+       
+
+        //TODO
+       //When setNorthRoom is set, call setSouthRoom on the other room here, so that it automatically sets both rooms together.
     }
 
     public Room getEastRoom() {
