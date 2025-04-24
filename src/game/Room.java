@@ -87,7 +87,7 @@ public class Room {
     public Item removeItem(String itemName) {
         Item itemToBeRemoved = findItem(itemName);
         if (itemToBeRemoved != null) {
-
+            items.remove(itemToBeRemoved);
         }
         return itemToBeRemoved;
     }
